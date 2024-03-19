@@ -27,29 +27,24 @@ body {
 }
 
 nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
   max-width: 80vw;
   margin: auto;
   align-items: center;
-  height: 60px;
-  padding-top: 1vh;
+  height: 10vh;
+  z-index: 5;
+  /* padding-top: 1vh; */
 }
 
 nav img {
-  position: relative;
-  /* color: red; */
-  width: 140px;
-  z-index: 5;
-}
-
-nav button {
-  position: relative;
-  z-index: 5;
+  width: max(7vh, 7vw);
+  cursor: pointer;
 }
 
 .ad {
-  height: calc(100% - 60px - 1vh);
+  height: calc(100% - 10vh - 20vh);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,40 +52,82 @@ nav button {
   flex-direction: column;
   position: relative;
   font-family: "Martel Sans", sans-serif;
-  padding: 0 20rem;
+  padding: 10vh 10vw;
   /* gap: 10rem; */
 }
 
 /* .ad > :nth-child(1) { */
 .ad > :first-child {
   font-weight: 900;
-  font-size: 3.5rem;
+  font-size: 5vh;
   text-align: center;
   /* gap: 10rem; */
 }
 
 .ad > :nth-child(2) {
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 2.5vh;
   text-align: center;
 }
 
 .ad > :nth-child(3) {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.5vh;
   text-align: center;
 }
 
 .separation {
-  height: 5px;
+  height: 0.5vh;
   background-color: rgb(60, 60, 60);
 }
 
-.btn {
-  padding: 8px;
+.btn-lang {
+  padding: 0.4vh 1vw;
+  background-color: rgba(248, 245, 245, 0.02);
+  color: whitesmoke;
+  font-size: 1.4vh;
+  font-weight: 400;
+  border-radius: 0.3vw;
+  border: 0.1vh solid whitesmoke;
+  cursor: pointer;
+}
+
+.btn-signIn {
+  padding: 0.4vh 1vw;
   background-color: red;
-  color: white;
+  color: whitesmoke;
+  font-size: 1.4vh;
+  font-weight: 400;
+  border-radius: 0.3vw;
+  cursor: pointer;
+}
+
+.ad-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+.btn-submit,
+.main input {
+  min-height: 2.5vh;
+  min-width: 15vw;
+  padding: 1vh 2vw;
+  border-radius: 0.6vw;
+  color: whitesmoke;
+}
+
+.btn-submit {
+  background-color: red;
+  font-size: 2.5vh;
   font-weight: bold;
-  border-radius: 3px;
-  border: 0;
+  cursor: pointer;
+}
+
+.main input {
+  flex: 1;
+  font-size: 1.5vh;
+  background-color: rgba(248, 245, 245, 0.02);
+  border: 0.1vh solid whitesmoke;
 }
