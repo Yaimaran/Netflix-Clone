@@ -1,1 +1,1 @@
-# This is a ネットフリックスクローン - Netflix Clone Project
+# This is a ネットフリックスクローン Netflix Clone Project
