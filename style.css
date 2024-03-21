@@ -39,7 +39,7 @@ nav {
 }
 
 nav img {
-  width: max(7vh, 7vw);
+  width: max(8vh, 8vw);
   cursor: pointer;
 }
 
@@ -53,15 +53,13 @@ nav img {
   position: relative;
   font-family: "Martel Sans", sans-serif;
   padding: 10vh 10vw;
-  /* gap: 10rem; */
 }
 
 /* .ad > :nth-child(1) { */
 .ad > :first-child {
   font-weight: 900;
-  font-size: 5vh;
+  font-size: 4.5vh;
   text-align: center;
-  /* gap: 10rem; */
 }
 
 .ad > :nth-child(2) {
@@ -82,23 +80,24 @@ nav img {
 }
 
 .btn-lang {
-  padding: 0.4vh 1vw;
+  padding: 0.7vh 1vw;
   background-color: rgba(248, 245, 245, 0.02);
   color: whitesmoke;
-  font-size: 1.4vh;
-  font-weight: 400;
-  border-radius: 0.3vw;
-  border: 0.1vh solid whitesmoke;
+  font-size: 1.5vh;
+  font-weight: bold;
+  border-radius: 0.2vw;
+  border: 0.1vh solid rgba(245, 245, 245, 0.354);
   cursor: pointer;
 }
 
 .btn-signIn {
-  padding: 0.4vh 1vw;
+  padding: 0.7vh 1vw;
   background-color: red;
   color: whitesmoke;
-  font-size: 1.4vh;
-  font-weight: 400;
-  border-radius: 0.3vw;
+  font-size: 1.5vh;
+  font-weight: bold;
+  border-radius: 0.2vw;
+  border: 0.1vh solid red;
   cursor: pointer;
 }
 
@@ -112,22 +111,25 @@ nav img {
 .btn-submit,
 .main input {
   min-height: 2.5vh;
-  min-width: 15vw;
-  padding: 1vh 2vw;
-  border-radius: 0.6vw;
+  border-radius: 0.2vw;
   color: whitesmoke;
 }
 
 .btn-submit {
+  min-width: 15vw;
   background-color: red;
   font-size: 2.5vh;
   font-weight: bold;
+  padding: max(0.9vh, 0.9vw) 1.5vw;
   cursor: pointer;
+  border: 0.1vh solid red;
 }
 
 .main input {
   flex: 1;
+  min-width: 20vw;
   font-size: 1.5vh;
-  background-color: rgba(248, 245, 245, 0.02);
-  border: 0.1vh solid whitesmoke;
+  padding: max(1vh, 1vw) 1.5vw;
+  background-color: rgba(0, 0, 0, 0.416);
+  border: 0.1vh solid rgba(245, 245, 245, 0.435);
 }
