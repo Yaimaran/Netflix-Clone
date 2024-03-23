@@ -140,7 +140,7 @@ nav img {
   /* flex-shrink: 0; */
   /* width: 100%; */
   min-width: 20vw;
-  font-size: 1.5vh;
+  font-size: 2vh;
   padding: max(1vh, 1vw) 1.5vw;
   background-color: rgba(0, 0, 0, 0.416);
   border: 0.1vh solid rgba(245, 245, 245, 0.435);
@@ -162,5 +162,51 @@ nav img {
 
 .separation {
   height: 0.5vh;
+  /* width: 100%; */
   background-color: rgb(60, 60, 60);
+}
+
+section {
+  height: 60vh;
+  /* width: 80%; */
+  display: flex;
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  align-items: center;
+  color: whitesmoke;
+  font-family: "Martel Sans", sans-serif;
+  padding: 0 10vw 0 10vw;
+  overflow: clip;
+  overflow-clip-margin: content-box;
+}
+
+.secImg {
+  position: relative;
+}
+
+.secImg img {
+  width: 100%;
+}
+
+.secImg video {
+  z-index: -1;
+  width: 85%;
+  position: absolute;
+  top: 20%;
+  left: 13.2%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.text :first-child {
+  font-weight: 900;
+  font-size: 4.5vh;
+}
+
+.text :nth-child(2) {
+  font-weight: 100;
+  font-size: 2.5vh;
 }
