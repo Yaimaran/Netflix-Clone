@@ -12,7 +12,7 @@ body {
 
 .main {
   background-image: url("assets/images/bg.jpg");
-  height: 80vh;
+  height: calc(10vh + 64vh);
   position: relative;
   background-position: center center;
 }
@@ -20,7 +20,7 @@ body {
 .main .box {
   position: absolute;
   top: 0;
-  height: 80vh;
+  height: 74vh;
   width: 100%;
   opacity: 0.7;
   background-color: black;
@@ -44,7 +44,7 @@ nav img {
 }
 
 .ad {
-  height: calc(100% - 10vh - 20vh);
+  height: 64vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +52,7 @@ nav img {
   flex-direction: column;
   position: relative;
   font-family: "Martel Sans", sans-serif;
-  padding: 10vh 10vw;
+  padding: 0 2vw;
 }
 
 /* .ad > :nth-child(1) { */
@@ -74,38 +74,40 @@ nav img {
   text-align: center;
 }
 
-.separation {
-  height: 0.5vh;
-  background-color: rgb(60, 60, 60);
+.default {
+  display: flex;
+  align-items: center;
+  gap: 1.2vw;
 }
 
-.btn-lang {
+.btn-lang,
+.btn-signIn {
   padding: 0.7vh 1vw;
-  background-color: rgba(248, 245, 245, 0.02);
-  color: whitesmoke;
   font-size: 1.5vh;
   font-weight: bold;
   border-radius: 0.2vw;
+}
+
+.btn-lang {
+  background-color: rgba(248, 245, 245, 0.02);
+  color: whitesmoke;
   border: 0.1vh solid rgba(245, 245, 245, 0.354);
   cursor: pointer;
 }
 
 .btn-signIn {
-  padding: 0.7vh 1vw;
   background-color: red;
   color: whitesmoke;
-  font-size: 1.5vh;
-  font-weight: bold;
-  border-radius: 0.2vw;
   border: 0.1vh solid red;
-  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .ad-input {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1vw;
+  width: 80%;
+  gap: 0.5vw;
 }
 
 .btn-submit,
@@ -121,15 +123,44 @@ nav img {
   font-size: 2.5vh;
   font-weight: bold;
   padding: max(0.9vh, 0.9vw) 1.5vw;
-  cursor: pointer;
   border: 0.1vh solid red;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-submit:hover,
+.btn-signIn:hover {
+  background-color: rgb(206, 5, 5);
+  border: 0.1vh solid rgb(206, 5, 5);
+  cursor: pointer;
 }
 
 .main input {
-  flex: 1;
+  /* flex: 1; */
+  /* flex-grow: 2; */
+  /* flex-shrink: 0; */
+  /* width: 100%; */
   min-width: 20vw;
   font-size: 1.5vh;
   padding: max(1vh, 1vw) 1.5vw;
   background-color: rgba(0, 0, 0, 0.416);
   border: 0.1vh solid rgba(245, 245, 245, 0.435);
+}
+
+@media (max-width: 599px) {
+  .ad-input {
+    flex-direction: column;
+    /* align-items: stretch; */
+    gap: 1.2vh;
+  }
+
+  .main input {
+    /* flex: 1; */
+    /* min-width: 0; */
+    width: 100%;
+  }
+}
+
+.separation {
+  height: 0.5vh;
+  background-color: rgb(60, 60, 60);
 }
