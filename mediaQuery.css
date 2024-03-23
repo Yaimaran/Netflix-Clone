@@ -1,0 +1,87 @@
+/* MEDIA QUERY SECTION */
+
+@media (max-width: 599px) {
+  .ad {
+    height: 55vh;
+    padding: 0 4vw;
+  }
+
+  .main,
+  .main .box {
+    height: 65vh;
+  }
+
+  .ad > :first-child {
+    font-weight: 700;
+    font-size: 3.5vh;
+    text-align: center;
+  }
+
+  .ad > :nth-child(2) {
+    font-weight: 400;
+    font-size: 2vh;
+    text-align: center;
+  }
+
+  .ad > :nth-child(3) {
+    font-weight: 400;
+    font-size: 2vh;
+    text-align: center;
+  }
+
+  .ad-input {
+    flex-direction: column;
+    /* align-items: stretch; */
+    gap: 1.2vh;
+  }
+
+  .ad-input input {
+    /* flex: 1; */
+    /* min-width: 0; */
+    width: 100%;
+  }
+
+  .btn-submit {
+    font-weight: 500;
+    font-size: 2vh;
+  }
+
+  .first,
+  .third,
+  .faq {
+    flex-direction: column;
+  }
+
+  .second,
+  .fourth {
+    flex-direction: column-reverse;
+  }
+
+  .text > :first-child {
+    font-weight: 700;
+    font-size: 3vh;
+    text-align: center;
+  }
+
+  .text > :nth-child(2) {
+    font-weight: 400;
+    font-size: 2vh;
+    text-align: center;
+  }
+
+  .faq > :first-child {
+    font-weight: 700;
+    font-size: 3vh;
+    text-align: center;
+  }
+
+  .faq-box span {
+    font-size: 2vh;
+  }
+
+  .faq > :nth-child(3) {
+    font-size: 2vh;
+    font-weight: 400;
+    text-align: center;
+  }
+}
