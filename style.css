@@ -34,11 +34,11 @@ nav {
   margin: auto;
   align-items: center;
   height: 10vh;
-  z-index: 5;
+  z-index: 1;
   /* padding-top: 1vh; */
 }
 
-nav img {
+.logo {
   width: max(8vh, 8vw);
   cursor: pointer;
 }
@@ -82,7 +82,7 @@ nav img {
 
 .btn-lang,
 .btn-signIn {
-  padding: 0.7vh 1vw;
+  padding: 0.5vh 0.6vw;
   font-size: 1.5vh;
   font-weight: 500;
   border-radius: 0.2vw;
@@ -98,7 +98,7 @@ nav img {
 .btn-signIn {
   background-color: red;
   color: whitesmoke;
-  border: 0.1vh solid red;
+  border: 0.4vh solid red;
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -258,4 +258,29 @@ section {
   font-size: 2.4vh;
   font-weight: 400;
   text-align: center;
+}
+
+footer {
+  font-size: 1.8vh;
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 5vh 10vw;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.container {
+  font-size: 1.6vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8vh;
+  padding: 2vh 0;
+}
+
+.end {
+  margin: 2vh 0;
+  font-size: 1.6vh;
 }

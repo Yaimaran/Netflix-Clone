@@ -1,6 +1,6 @@
 /* MEDIA QUERY SECTION */
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .ad {
     height: 55vh;
     padding: 0 4vw;
@@ -45,6 +45,12 @@
     font-weight: 500;
     font-size: 2vh;
   }
+}
+
+@media (max-width: 960px) {
+  section {
+    height: 85vh;
+  }
 
   .first,
   .third,
@@ -83,5 +89,9 @@
     font-size: 2vh;
     font-weight: 400;
     text-align: center;
+  }
+
+  .container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
