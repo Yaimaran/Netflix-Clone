@@ -245,6 +245,8 @@ section {
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
+
+  transition: background-color 1s ease-out 0s;
 }
 
 .faq-box span:hover {
